@@ -111,6 +111,14 @@ npm test
 
 Datawhale 24 条案例的 PDF 页码映射由 `npm run link:datawhale-pdf` 维护。主来源指向官方 PDF 的准确物理页码，原单案例网页保留在补充来源中。
 
+## 更新与同步
+
+- 上游同步：`npm run sync:upstream`
+- 新案例录入模板：[`docs/case-intake-template.md`](docs/case-intake-template.md)
+- 完整维护流程：[`docs/UPDATE_WORKFLOW.md`](docs/UPDATE_WORKFLOW.md)
+
+同步命令优先使用快进更新；存在本地维护提交时会安全衔接最新上游，遇到未提交修改或合并冲突时停止，避免覆盖本地内容。
+
 ## 如何引用
 
 建议同时引用：
@@ -217,6 +225,14 @@ npm test
 Validation covers required fields, stable IDs, HTTPS sources, detail-score consistency, source ledgers, evidence boundaries, bilingual case parity, generated browser data, language-switch links, and JavaScript syntax in both pages.
 
 The 24 Datawhale PDF page mappings are maintained by `npm run link:datawhale-pdf`. Each primary source opens the exact physical PDF page; the original single-case webpage remains available as an additional source.
+
+## Updating and synchronization
+
+- Upstream sync: `npm run sync:upstream`
+- Case intake template: [`docs/case-intake-template.md`](docs/case-intake-template.md)
+- Maintenance workflow: [`docs/UPDATE_WORKFLOW.md`](docs/UPDATE_WORKFLOW.md)
+
+The sync command uses fast-forward updates when possible and rebases local maintenance commits onto the latest upstream state. It stops on uncommitted changes or merge conflicts to preserve local work.
 
 ## How to cite a case
 
